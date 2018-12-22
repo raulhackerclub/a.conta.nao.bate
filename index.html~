@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tarifa de Ônibus em SSA - as contas não batem</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+<script>
+  function registerDocWidth() {
+    var body = $(document.body);
+    var docW = $(document).width();
+    for ( var w=600; w<=2000; w+=50 ) {
+      if ( docW < w ) {
+        body.removeClass('gt'+w);
+        body.addClass('lt'+w);
+      } else {
+        body.removeClass('lt'+w);
+        if ( docW > w ) body.addClass('gt'+w);
+      }
+    }
+  }
+  registerDocWidth();
+  $(window).resize(registerDocWidth);
+</script>
+
+    <h1>Quando as contas não batem</h1>
+
+    <div class="info">
+      <i>↷</i> Clique nas placas para ler os detalhes!
+    </div>
+
+    <div class="topic">
+      <h2>Clique para ver detalhes!</h2>
+      <div>
+        <p>Cada tópico tem um detalhamento, para que os interessados possam se aprofundar em cada assunto.</p>
+        <p>Informação, use sem moderação.</p>
+      </div>
+    </div>
+
+    <div class="topic">
+      <h2>Coitado do SETPS! Eles operam mesmo no vermelho?</h2>
+      <div>
+        <p>No dia 31 de julho, como resposta a estas afirmações, a Transalvador – órgão da Prefeitura de Salvador responsável pela supervisão da gestão do transporte público – apresentou uma planilha de cálculo tarifário do transporte público referente a agosto de 2012 (<a href=http://www.transalvador.salvador.ba.gov.br/paginas/informacoes/planilha_custo_onibus/planilha.pdf>aqui</a>), na tentativa de abafar o debate. O SETPS prontamente apresentou outra planilha com valores referente a julho de 2013 (<a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Setps.pdf>aqui</a>), onde tenta provar que há empresas que trabalham no vermelho (ver notícia <a href=http://www.bahianoticias.com.br/2011/index.php?menu=noticia&canal=principal&COD=141489&TITULO=preview&preview=2b699f> aqui</a>).</p>
+        <p>No dia seguinte à divulgação das planilhas, como é de hábito, começaram as negociações e acordos em torno dos valores apresentados pelo SETPS e pela Prefeitura (<a href=http://www.bocaonews.com.br/noticias/politica/politica/66115,vereadores-discutem-com-secretario-aleluia-pauta-do-mpl.html>aqui</a>). Até mesmo José Carlos Aleluia, secretário municipal de urbanismo e transportes de Salvador e um dos nomes fortes do DEM na Bahia, questionou o fato de tantas empresas operarem no vermelho e nenhuma delas ter falido nos últimos anos (ver entrevista <a href=http://www.bahianoticias.com.br/principal/noticia/141493-aleluia-rebate-prejuizos-alegados-pelo-setps-voce-viu-empresa-de-onibus-falir-recentemente.html>aqui</a>). E Horácio Brasil, que desde sua gestão como secretário municipal de transporte durante o mandato de Mário Kertesz à frente da Prefeitura de Salvador (1986-1989) tornou-se a face pública das empresas de transporte e desde 1997 é diretor-superintendente do SETPS, pretendeu rebater o secretário numa entrevista que, apesar de quase totalmente evasiva (ler as perguntas e respostas originais <a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Resposta%20Setps.pdf>aqui</a>), ao menos serviu para admitir publicamente a receita anual das empresas de ônibus de Salvador, de aproximadamente R$ 1 bilhão (ver matéria completa <a href=http://www.bahianoticias.com.br/principal/noticia/141549-setps-confirma-faturamento-anual-de-r-1-bilhao-sem-justificar-necessidade-de-aumento-da-tarifa.html>aqui</a>).</p>
+      </div>
+    </div>
+
+    <div class="topic">
+      <h2>O Decreto Municipal além de acabar com o FUNDETRANS não obriga que seja informado os custos, mas apenas a receita. Pois a prefeitura de Salvador confia plenamente no SETPS, certo? Talvez devêssemos confiar também?</h2>
+      <div>
+        <p>Tanto a planilha tarifária apresentada pela Prefeitura de Salvador quanto aquela apresentada pelo Sindicato das Empresas de Transporte de Passageiros de Salvador (SETPS) deveriam seguir o modelo estabelecido pelo Decreto Municipal 23.311, de 04 de outubro de 2012 (<a href=http://www.transalvador.salvador.ba.gov.br/paginas/informacoes/planilha_custo_onibus/decreto.pdf>aqui</a>).</p>
+        <p>Este mesmo decreto tem outro elemento importante para nossa análise. Apesar de as empresas de ônibus estarem obrigadas a enviar diariamente à Prefeitura as informações detalhadas sobre passageiros transportados, em espécie e em bilhetagem eletrônica (art. 2º); apesar de o SETPS estar obrigado a apresentar diariamente ao Superintendente da Transalvador o movimento da bilhetagem eletrônica apresentado por cada empresa, quantificado pelos valores em resgate (art. 3º); apesar disto tudo, a obrigação legal é de apresentar a receita, não os custos; este últimos só entram em debate quando a Prefeitura decide aumentar a tarifa (art. 3º, parágrafo único, incisos I a IV). Em suma: a Prefeitura sabe quanto as empresas ganham por dia, mas é “incapaz” de calcular, a cada dia, a massa ou a taxa de lucro de cada uma. Esta informação fica com o SETPS; apenas quando é publicado o Anuário de Transporte é possível, e apenas através de cálculos e cruzamentos de dados, estimar, e não saber com precisão, quanto cada empresa lucra.</p> 
+
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>Sobre a extinção do FUNDETRANS e suas implicações</h2>
+      <div>
+        <p>O Decreto Municipal 23.311, de 04 de outubro de 2012 (<a href=http://www.transalvador.salvador.ba.gov.br/paginas/informacoes/planilha_custo_onibus/decreto.pdf>aqui</a>), que é a regra provisória e precária, foi criada para substituir a Lei Municipal 4.534, de 21 de maio de 1992 (ver texto da lei revogada <a href=http://www.midiaindependente.org/media/2006/12/369622.pdf>aqui</a>). Se ressaltamos que a regra é provisória e precária, chamamos a atenção, assim, para o fato de a Câmara de Vereadores haver revogado esta lei (ver notícia da votação <a href=http://www.cms.ba.gov.br/noticia_int.aspx?id=4661>aqui</a>), que entre outras coisas instituía o Fundo de Desenvolvimento do Transporte Coletivo de Salvador (FUNDETRANS).</p>
+        <p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>Veja como um sindicato patronal de uma <b>EMPRESA PRIVADA</b> (SETPS) é o único órgão a ter domínio das informações de uso do transporte público em Salvador, devíamos mudar a prefeitura para Brotas, não é? </h2>
+      <div>
+        <p>Partindo para a análise das planilhas, em primeiro lugar, a planilha apresentada pela Prefeitura (ver <a href=http://www.transalvador.salvador.ba.gov.br/paginas/informacoes/planilha_custo_onibus/planilha.pdf>aqui</a>) já nos deixa a ver navios. Trata-se de uma planilha desatualizada, enviada em agosto de 2012 à Câmara de Vereadores. Defasada em quase um ano, de pouco serviria para fundamentar um debate público. Reflete o estado de desinformação em que se encontra a Prefeitura de Salvador no que diz respeito à gestão do sistema, e ao mesmo tempo o total domínio das empresas de ônibus sobre o setor, cuja face mais visível é a onipotência do SETPS nos debates técnicos sobre o assunto. Para se ter uma ideia, a Prefeitura não consegue sequer informar quanto as empresas distribuem a seus sócios como pro labore (ou seja, como remuneração dos acionistas).</p>
+        <p>Em segundo lugar, no que diz respeito ao parco conteúdo da planilha, a Prefeitura teria plenas condições de ser mais transparente. Os dados para fechar a edição 2012 do Anuário de Transporte, a esta altura de 2013, já estão em poder da Transalvador; ignoramos os motivos que, em tempos de Lei do Acesso à Informação (ver <a href=http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm>aqui</a>) e de transparência ativa, impedem sua divulgação no site da própria Prefeitura, nos moldes do que a prefeitura de São Paulo foi forçada a fazer devido à pressão do MPL (ver <a href=http://www.prefeitura.sp.gov.br/cidade/secretarias/transportes/transparencia/receita_e_despesas/index.php?p=150849>aqui</a>).</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>SETPS usa a falta de informação para atacar os direitos de Gratuidade e Meia passagem, mas eles não eram monges franciscanos que trabalham no vermelho?</h2>
+      <div>
+        <p><a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Setps.pdf>A planilha do SETPS</a> não é exatamente uma planilha, mas uma peça de propaganda que contém uma planilha, um verdadeiro manifesto das empresas. Defendem, como sempre, que o sistema se sustentaria e seria mais justo se não fossem os “benefícios” da gratuidade e da meia passagem, e tentam usar números para atacar direitos adquiridos.</p>
+        <p>É nela, entretanto, que aprendemos a contar os passageiros equivalentes - ou seja, de acordo com a metodologia de cálculo tarifário, o número de passageiros que efetivamente custeia o sistema. Segundo o SETPS, “cada dois estudantes que pagam meia são computados como 1 passageiro pagante”, e “os gratuitos não são computados como passageiros pagantes”.</p>
+        <p>Comparando a planilha do SETPS com a da <a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Prefeitura.pdf>Prefeitura</a>, nota-se de cara que ou a inflação galopante propagandeada pela imprensa é verdadeira (e isto só cola com quem nunca viveu inflação de 30% ao mês), ou a planilha do SETPS foi enormemente superfaturada.</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>SETPS coloca (acidentalmente?) alguns zero adicionais em sua planilha</h2>
+      <div>
+        <p>Comparando <a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Setps.pdf>a planilha do SETPS</a> com a da <a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Prefeitura.pdf>Prefeitura</a>, nota-se de cara que ou a inflação galopante propagandeada pela imprensa é verdadeira (e isto só cola com quem nunca viveu inflação de 30% ao mês), ou a planilha do SETPS foi enormemente superfaturada.</p>
+        <p>Um exemplo: os custos mensais com seguro obrigatório saem de R$ 35,83 por veículo na planilha da Prefeitura e de R$ 44,50 na planilha do SETPS – e se a diferença de R$ 8,67 por veículo parece irrisória, ela representa um aumento de 24,21% de uma tabela para a outra no espaço de um ano. Para piorar, isto representa, se levarmos em conta a frota de 2.400 veículos em operação, um aumento de R$ 20.808,00 nos custos mensais do sistema..</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>SETPS superfaturou até mesmo custos com fardamento de pessoal, talvez a farda deles sejam compradas na Zara</h2>
+      <div>
+        <p><a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Setps.pdf>A planilha do SETPS</a> embutiu em cada ônibus um custo mensal de R$ 211,83 com fardamento de pessoal. Já o Sindicato dos Rodoviários diz que esta despesa não é mensal, mas semestral (ver <a href=http://www.bahianoticias.com.br/principal/noticia/141549-setps-confirma-faturamento-anual-de-r-1-bilhao-sem-justificar-necessidade-de-aumento-da-tarifa.html>aqui</a>). Considerando uma frota de 2.400 ônibus, como indica a Prefeitura, este enxerto representa um aumento de R$ 508.392,00 no custo mensal do sistema.</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>O SETPS quer que acreditemos que o custo com bilhetagem subiu 80% de 2012 para 2013, o que onera sua planilha em <b>R$ 897.624,00</b> nos custos <b>mensais</b></h2>
+      <div>
+        <p>Os custos com o sistema de bilhetagem eletrônica para cada veículo são de R$ 462,00 para a Prefeitura (<a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Prefeitura.pdf>dados de agosto de 2012</a>) e de R$ 836,01 para o SETPS (<a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Setps.pdf>dados de julho de 2013</a>). A diferença é de R$ 374,01 por veículo – ou seja, de um ano para o outro o custo com o sistema de bilhetagem eletrônica aumentou 80,95%. Além disto, considerando uma frota de 2.400 ônibus, esta sutil variação de preços representa um aumento de <b>R$ 897.624,00</b> nos custos mensais do sistema.</p>
+      </div>
+    </div>
+
+
+<div class="topic">
+      <h2>O Prolabore do SETPS onera o custo em <b>R$ 1.600.272,00 mensais</b>, isso mesmo, quase <b>DOIS MILHÕES por MÊS</b>, mas eles não eram quase voluntários pelo transporte público em Salvador?</h2>
+      <div>
+        <p>Enquanto a <a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Prefeitura.pdf>planilha da Prefeitura</a> não inclui entre os custos o pro labore dos sócios, a <a href=http://www.bahianoticias.com.br/ckfinder/userfiles/files/Planilha%20Setps.pdf>planilha do SETPS</a> o inclui – o que aumenta o custo mensal por veículo em R$ 666,78 e representa, considerando uma frota de 2.400 veículos, um aumento de <b>R$ 1.600.272,00</b> por mês nos custos totais do sistema.</p>
+        <p>Levando em consideração que são 18 empresas, representa um "salário" de <b>R$ 88.904,00</b> por dono de empresa.</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>A diferença de custo informada pelo SETPS é tão grande que poderia custear a aquisição de 157 ônibus modelo novo (Padron) <b>por ano</b></h2>
+      <div>
+        <p>E de grão em grão a galinha enche o papo. Com os exemplos das diferenças dos custos com; seguro obrigatório, fardamento, bilhetagem e prolabore, o SETPS enxertou <b>R$ 3.027.096,00</b> nos custos mensais do sistema. Por ano, este enxerto frutifica em R$ <b>36.325.152,00</b>. Para se ter uma ideia, com esta diferença é possível comprar, segundo preços apresentados na planilha da Prefeitura, 157 novos ônibus modelo padron - aqueles com suspensão a ar e motor no fundo, que garantem um mínimo de conforto em comparação com os convencionais com suspensão de molas e motor na frente.</p>
+      </div>
+    </div>
+
+
+<div class="topic">
+      <h2>A diferença a de custo entre a SETPS e Prefeitura representa uma diferença de <b>R$ 65.569.035,50 anuais</b></h2>
+      <div>
+        <p>E o resultado das tabelas do SETPS é que nela o custo operacional do sistema, calculado segundo o mesmo método empregue anteriormente (quilometragem admitida – 18.448.255,44 km – multiplicada pelo custo operacional por quilômetro – R$ 4,6486), é de R$ 85.758.560,24 ao mês. Usando a mesma extrapolação anteriormente feita, e com as mesmas críticas, chega-se a um custo anual de R$ 1.029.102.722,88. Fica claro que esta tabela, com um aumento de R$ 5.464.086,29 mensais e R$ 65.569.035,50 anuais (segundo a extrapolação que fizemos), foi enxertada o suficiente para fazer o custo operacional do sistema sair maior que a receita admitida (R$ 1 bilhão) e justificar, se não a manutenção da tarifa no preço atual, um futuro aumento tarifário.</p>
+      <p>Levando em consideração que os dados sejam verdadeiros, essa diferença indica um lucro anual de <b>R$ 36.466.312,62</b> anuais, isso já incluindo o "salário" mensal de R$ 88.904,00 para cada "dono" das 18 empresas, e não o prejuízo informado de R$ 29.102.722,88 informado pelo SETPS.
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>A esta altura, quem lê pode ter ficado com a impressão de que estamos defendendo os dados da Prefeitura contra os dados do SETPS. Longe disto! O que queremos mostrar é como uma e outro agem em conjunto para enganar o povo.</h2>
+      <div>
+        <p>Mais uma vez, remetemos àquele ensaio que um de nós escreveu sobre o ciclo de lutas em torno do transporte público em Salvador entre 2003 e 2011 (<a href=http://passapalavra.info/2011/08/44683>aqui</a>). Assim como a abertura das negociações em torno das duas propostas (SETPS e Prefeitura) é – e sempre foi – previsível, a discrepância entre as duas também o é. SETPS joga uma proposta alta, Prefeitura joga uma proposta baixa, e o aumento fica no meio-termo. E assim sucessivamente, e até encher o saco.</p>
+      <p>Há diferenças, como dissemos antes. Há mobilização de rua, há a ocupação da Câmara de Vereadores e não há aumento à vista no curto prazo (até dois meses); além disto, entre outros elementos de uma pauta extensa (que pode ser vista <a href=https://www.dropbox.com/s/8w4ooeu15lmfmir/Carta%20Aberta%20do%20Movimento%20Passe%20Livre%20Salvador.pdf>aqui</a>), a Prefeitura está sendo pautada pelos manifestantes a reduzir a tarifa atualmente existente, e não a revogar um aumento recentemente concedido. Apesar disto, os atores se movimentam ainda segundo o roteiro. E, como sabemos de tanto ver a peça, a alegria do primeiro ato, que já começa a degenerar em angústia para alguns, pode se transformar numa enorme tristeza no segundo ato.</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>Levando em consideração que todos os dados apresentados no anuário são verdadeiros, é possível afirmar que o SETPS tem um <b>lucro</b> de <b>142.410.670,31 anuais</b>, isso mesmo que você viu, quase <b>Cento a quarenta e três MILHÕES de reais</b>.</h2>
+      <div>
+        <p>Com base no anuário de 2011, calcular o lucro de uma empresa é uma operação simples: tira-se a despesa da receita; se o que ficar for positivo, é lucro, e se não for, é prejuízo. Pegando a receita de R$ 1.038.891.383,60 e tirando o custo de R$ 896.480.713,29, chegamos ao lucro anual de R$ 142.410.670,31. É esta a massa de lucro das empresas. Segundo nossas estimativas, que acreditamos serem bastante razoáveis, foi este o lucro anual das empresas em 2011.</p>
+      </div>
+    </div>
+
+<div class="topic">
+      <h2>Qual a mágica para uma empresa do tamanho do grupo Ondina consegue sobreviver desde 2004 tomando prejuízo anuais de aproximadamente <b>QUATRO MILHÕES de reais</b>? Eles precisam socializar esse conhecimento no SEBRAE.</h2>
+      <div>
+        <p>Com base no anuário de 2011, a receita do grupo Ondina foi de R$ 25.174.965,20 e despesa de R$ 29.330.921,12, o que não foi muito diferente no últimos anos.</p>
+      </div>
+    </div>
+
+
+<div class="topic">
+      <h2>Por que será que nenhuma iniciativa de melhoria de mobilidade urbana, que não contemple ônibus, seja levada adiante em Salvador? Será que temos menos tanta pena dos monges franciscanos do SETPS?</h2>
+      <div>
+        <p>Qualquer tentativa de alteração nos modais de transporte (barcos, elevadores, bondes, VLT, etc.) é bloqueada pelas empresas de ônibus e por seus asseclas. Basta lembrar a veemência com que a Prefeitura, na voz do então secretário da Casa Civil, João Leão (PP), defendeu a implementação do sistema bus rapid transit (BRT) em Salvador (ver, entre outras, esta notícia <a href=http://www.bocaonews.com.br/noticias/principal/infraestrutura/40548,prefeito-reaparece-e-agora-e-a-vez-do-brt-sera-que-este-vai-andar.html>aqui</a>). A implementação de qualquer modal de massa põe em xeque o oligopólio atualmente existente em Salvador no setor de transporte público – ao menos num primeiro momento, pois, como bons simbiontes, com o tempo donos de empresas de ônibus e gestores dos sistemas sobre trilhos saberão chegar a acordos para cooperarem em prol da sobrevivência.</p>
+      </div>
+    </div>
+    
+    <div class="topic">
+      <h2>Você sabia que apenas três grupos são donos de todas as empresas de ônibus em Salvador? mas a noticias falam que o novo edital é para comportar 3 sociedades, correto? Deve ser coincidência ou jogo de cartas marcadas?</h2>
+      <div>
+        <p>Para começar, temos o primeiro tronco familiar de empresas, formado pelas empresas resultantes da cisão da antiga Viação Beira Mar S.A. (VIBEMSA) em 1991. Estre “tronco” tem início em 1958, quando os galegos Carlos Knittel, Fidel Nuñez e Benjamin Nuñez Fernandez (irmãos), Fernando Nuñez (filho de Fidel), mais Olegário Perez, Maximino Piño e Ricardo Rodriguez Represas fundaram a empresa Transportes Jordão, com seis ônibus. O nome veio da Fazenda Jordão, no distrito de Montegordo (Camaçari), onde Carlos e Fidel haviam se estabelecido ao chegar ao Brasil antes de Benjamin. Em 1963, com a adição de novos sócios, este grupo fundou a Viação Beira Mar Ltda. Em 1965, compraram parte da empresa Transpeninsular, que atendia linhas no Centro de Salvador. Em 1970 adquiriram da ITT as linhas para o Rio Vermelho, Pituba e Amaralina, além da compra da linha para Arembepe (Camaçari) das mãos da Viação Cristo Rei. Em 1972, quando o prefeito biônico Clériston Andrade (ARENA) decidiu pela transformação de todas as empresas de ônibus em sociedades anônimas, a Viação Beira Mar assumiu o nome pelo qual ficou conhecida: VIBEMSA. Em 1978 a VIBEMSA adquiriu a Viação Duran S.A. (VIDUSA), com 128 ônibus com linhas para Fazenda Garcia, São Lázaro, Federação, Engenho Velho da Federação, Nordeste, Vale das Pedrinhas e Santa Cruz. Em 26 de abril de 1991, quando o então prefeito de Salvador, Fernando José (PMDB) estabeleceu um limite de 250 ônibus por empresa, a VIBEMSA, então com frota de 530 ônibus, teve de se dividir em quatro. As empresas “filhas” da VIBEMSA são: Rio Vermelho, Verdemar, Ondina e Bahia Transportes Urbanos (BTU).</p>
+        <p>Depois, temos o segundo tronco familiar de empresas, formado pelas empresas originadas na Joevanza, fundada em 1970 por João Evangelista de Souza e Ariston Correia de Andrade. João Evangelista havia sido proprietário, anteriormente, da Viação Nordestina, fundada em 1956; foi morar no Rio de Janeiro entre 1965 e 1968 com sua família e ao voltar criou a JOEVANZA, nome baseado no seu próprio. Com a compra da finada Auto Expresso Ypiranga, a empresa Boa Viagem Ltda., que deu a seu filho, José Augusto Evangelista de Souza. Em 1992, João Evangelista fundou a Empresa de Transportes União Ltda., cujo controle entregou a seu filho Ivan Luiz Evangelista de Souza. Por ter uma frota gigantesca, em 1994 a Joevanza foi dividida, surgindo assim a Violeta Transportes Ltda. (VITRAL), sob controle de Maria Perpétua Evangelista de Souza, e a Axé Transportes Ltda., sob controle de Paulo Roberto Evangelista de Souza. Em 1996 a Boa Viagem Ltda., também gigantesca, foi divida, resultando na criação da empresa Praia Grande Transportes Ltda., atualmente a empresa com a maior frota de Salvador. Expandindo seus negócios para a Região Metropolitana de Salvador, em 1998 João Evangelista incorporou as empresas Litoral Norte e Costa Verde, e em 2003 adquiriu a Viação Cidade Industrial (Camaçari). Com a morte de João Evangelista de Souza em 25 de fevereiro de 2008, o Grupo Evangelista passou a controlar todas as demais empresas deste “tronco”.</p>
+        <p>Há outros troncos que não vingaram, ou se tornaram secundários. Há o tronco surgido quando, em 1954, Marçal Vicente Ferreira, ex-soldado da Aeronáutica, comprou um ônibus velho e fundou a Autoviária Ferreira. Em 1963, a empresa foi por Ferreira transformada na Itapoan Transporte Turismo e depois na Itapoan Transporte Triunfo, ambas com a sigla ITT. Em 1998, a empresa tem sua razão social alterada para Ilha Tropical Transportes Ltda., mantendo a sigla, e em 2002 Marçal Ferreira funda a Capital Transportes Urbanos Ltda., ambas hoje administradas por seus filhos. Há também o tronco surgido a partir da empresa Breda, que virou Viazul (já extinta, cindida em Jauá e Regional), Viação Cidade do Salvador (VCS, que atua desde sempre no transporte metropolitano) e Transportes São Salvador (TSS); esta última virou Lapa e Farol da Barra, que por sua vez virou Expresso Vitória e São Cristóvão. A Sul América virou OMNI, depois virou Mont Serrat, que sumiu sem deixar vestígios. A São Pedro gerou a Barramar. A Transol corre por fora, por não pertencer a qualquer destes troncos. Mas os dois troncos mais importantes são os que destacamos, seja pela lucratividade e tamanho da frota (tronco Joevanza), seja pelo enorme alcance (tronco VIBEMSA).</p>
+      </div>
+    </div>
+    
+    <div class="topic">
+      <h2>Mas afinal, quem são nossos inimigos?</h2>
+      <div>
+        <p>Empresários do tronco VIBEMSA exerceram a presidência do SETPS entre 1981/1993 (12 anos), 1995/1998 (3 anos) e 2009/2012 (3 anos), totalizando 18 anos no poder (54,45% dos 33 anos de existência do SETPS); os do tronco Transol exerceram a presidência entre 2001/2004 (3 anos) e 2007/2008 (2 anos), totalizando 5 anos no poder (15,15% da existência do SETPS); empresários do tronco Joevanza exerceram a presidência entre 2005/2007 (2 anos) e 2012/2013 (2 anos), totalizando 4 anos (12,12% do tempo de existência do SETPS); empresários do tronco TSS, pouco representativo em número de empresas e linhas, ocuparam a presidência do SETPS também por 4 anos, e assim vai.</p>
+      </div>
+    </div>
+    <div class="topic">
+      <h2>Entao você está me dizendo que Horácio Brasil é apenas um peão nesse Xadrez?</h2>
+      <div>
+        <p>Carlos Knittel (Dono da VIVEMSA) ocupou a presidência do SETPS durante a fase crucial de sua estruturação (a entidade é de 1980). Afinal, naquele momento, era o presidente do SETPS quem ia enfrentar negociações duras com o Sindicato dos Rodoviários e com a Prefeitura. Mesmo com a chegada do inamovível Horácio Brasil à entidade em 1997, o poder da presidência do SETPS não diminuiu. Horácio Brasil, tantas vezes hostilizado, não é outra coisa além de um técnico em gestão – muito competente, por sinal, mas apenas um gestor. A vivência das mobilizações por transporte público em Salvador de 2003 para cá demonstra que ele é responsável por ser o trator do SETPS na relação com a Prefeitura e com manifestantes. E assim tem sido. Mas é o presidente do SETPS quem vai ser representante regional junto à Associação Nacional das Empresas de Transporte Urbano (NTU), é ele quem vai negociar empréstimos e linhas de financiamento para as empresas, etc..</p>
+      </div>
+    </div>
+    
+        <div class="topic">
+      <h2>Falamos tanto em planilha, então o problema está nela, certo? CLARO QUE NÃO!!!</h2>
+      <div>
+        <p>Mas já chega de exemplos e debates. Estes assuntos já foram tão batidos por um de nós (especialmente <a href=http://passapalavra.info/2011/09/46384>aqui</a>,<a href=http://www.midiaindependente.org/pt/blue/2005/12/340139.shtml>aqui</a> e <a href=http://www.midiaindependente.org/pt/blue/2007/08/389431.shtml>aqui</a>) que não valeria a pena nos repetirmos.</p>
+        <p>Que o exemplo seja a prática, que o debate se dê nas ruas. Quando as contas não batem, não há outra saída.</p>
+        <p>Já chega de cair na armadilha das planilhas. Já chega de discutir a “rubriquinha A” e a “rubriquinha B” para chegar na “rubriquinha C”. Já chega de ficar tudo bem para todo mundo - todo mundo do lado de lá, claro, não para nós.</p>
+        <p>Para nós, e para outros tantos, está cristalinamente claro que não é possível abaixar tarifas em Salvador sem atacar os lucros dos empresários de ônibus. Qualquer solução de curto prazo que não passe por este caminho espinhoso e íngreme está condenada de antemão a jogar água no moinho dos empresários.</p>
+        <p>E atacar os lucros dos empresários significa atacar em duas frentes.</p>
+      </div>
+    </div>
+    
+      <div class="topic">
+      <h2>Já que não é planilha, o que devemos atacar? Os Lucros dos empresários!</h2>
+      <div>
+        <p>Atacar os empresários. São eles que enxertam mais viagens na carta de horários dos veículos, forçando os motoristas a correr e a queimar pontos; são eles que escolhem os melhores ou os piores ônibus para botar em cada linha; são eles, em resumo, os responsáveis diretos pela barbárie cotidiana no transporte público. Atacar os empresários significa fazer de tudo para que as informações que detém estejam disponíveis para todos, para que se possa, enfim, botar cabresto naquilo que está completamente fora de controle; para que se possa, enfim, controlar publicamente a gestão do transporte público, passo essencial para desenvolvimentos políticos futuros no setor.</p>
+      </div>
+    </div>
+
+      <div class="topic">
+      <h2>E o poder público, não tem "culpa no cartório"?</h2>
+      <div>
+        <p>Claro que tem! Devemos pressionar, ao mesmo tempo, o Poder Público. Não para que faça novas leis (o Estatuto da Mobilidade Urbana já contempla boa parte da pauta das mobilizações recentes), nem somente para “fazê-las valer”, mas para avançar além daquilo que está posto. Para que a luta pela implementação destas novas leis crie as bases para sua posterior superação. Para que a luta por transporte público não se encerre em si mesma, não seja um contínuo criar e recriar de leis e normas, mas que se some a outras lutas sociais tendentes a construir outras bases de convívio social, mais igualitárias e solidárias, e que possamos, assim, apoiar-nos mutuamente para pôr fim às opressões e à exploração.</p>
+      </div>
+    </div>
+
+      <div class="topic">
+      <h2>Com o precário acesso aos dados já foi possível realizar uma extensa analise da nossa situação, imagina quando eles publicarem tudo que são <b>OBRIGADOS</b> a publicar?</h2>
+      <div>
+        <p>Para nós, e novamente para outros tantos, também está claro que não dá para conhecer o lucro dos empresários sem antes ter acesso a todos os bancos de dados com informações sobre os elementos que formam os custos operacionais do sistema, item por item, com acompanhamento diário das variações. Qualquer solução de curto prazo que não derrube ou crie fissuras na muralha erguida para afastar do público os elementos dos custos operacionais só servirá para somar-lhe outro tijolo, e assim conter os ataques destes malditos vândalos e arruaceiros que “não têm foco, nem organização, nem pauta” para debater com técnicos assim tão bem encastelados. Derrubadas as muralhas e acessadas as informações necessárias, um técnico é igual a uma pessoa da rua, e seu status vai pro beleléu.</p>
+	<p>Falta muito, ainda, para chegarmos a este último assalto aos céus. Mas não podemos nos furtar a anunciá-lo, ou a construí-lo passo a passo. E esta é uma responsabilidade política de todos nós.</p>
+      </div>
+    </div>
+
+    <div id="footer">
+      Fonte : <a href=http://passapalavra.info/2013/08/82087>Passa Palavra</a>
+      &copy;left MPL Salvador
+    </div>
+    <script>
+      $('.topic').click(function(){ $('> div',this).slideToggle() });
+      $('.topic > div').hide()
+    </script>
+  </body>
+</html>
